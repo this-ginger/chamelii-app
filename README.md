@@ -1,4 +1,20 @@
-# [Django](https://appseed.us/admin-dashboards/django/) Dashboard Boilerplate 
+# Chamelii App
+
+This is a template web app edited to suit the needs of the client.
+We are using a template to facilitate rapid development and focus on back-end functional work.
+This is so we can give the client an insight into what the app could look like, and allow us to
+quickly work on API's and other back-end features to build a working prototype, without getting
+bogged down by having to create webpages etc.
+
+We are using this template in accordance with the MIT licence outlined in the code and do not
+intend on using it for deployment, unless the client wants to purchase a licence for the
+app template to be used outside the scope of development.
+
+Culture Club - Chamelii
+
+---
+
+[Django](https://appseed.us/admin-dashboards/django/) Dashboard Boilerplate 
 
 Reference codebase used by AppSeed in all [Django Dashboards](https://appseed.us/admin-dashboards/django/) starters.
 
