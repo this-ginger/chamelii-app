@@ -22119,8 +22119,8 @@ hr.horizontal.gray-light {
 
 .navbar-vertical .navbar-brand>img,
 .navbar-vertical .navbar-brand-img {
-  max-width: 110%;
-  max-height: 2.5rem;
+  max-width: 150% !important;
+  max-height: 2.75rem !important;
 }
 
 .navbar-vertical .navbar-nav {
@@ -22847,7 +22847,7 @@ hr.horizontal.gray-light {
 }
 
 .sidenav-header {
-  height: 4.875rem;
+  height: 5rem;
 }
 
 .sidenav-footer .card.card-background:after {
@@ -23087,7 +23087,7 @@ hr.horizontal.gray-light {
   }
 
   .g-sidenav-hidden .navbar-vertical .navbar-brand img {
-    width: auto !important;
+    width: auto;
   }
 
   .g-sidenav-hidden .navbar-vertical .navbar-brand span {
