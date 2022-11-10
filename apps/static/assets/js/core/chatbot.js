@@ -6,7 +6,7 @@
 var messages = [], //array that hold the record of each string in chat
   lastUserMessage = "", //keeps track of the most recent input string from the user
   botMessage = "", //var keeps track of what the chatbot is going to say
-  botName = 'Chatbot', //name of the chatbot
+  botName = 'Chamelii', //name of the chatbot
   talking = true; //when false the speach function doesn't work
 //
 //
@@ -29,6 +29,11 @@ function chatbotResponse() {
 
   if (lastUserMessage === 'name') {
     botMessage = 'My name is ' + botName;
+  }
+
+  if (lastUserMessage === 'cachow')
+  {
+    botMessage = 'I. Am. Speed.';
   }
 }
 //****************************************************************
