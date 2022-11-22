@@ -33,6 +33,7 @@ CSRF_TRUSTED_ORIGINS = ['http://localhost:85', 'http://127.0.0.1', 'https://' + 
 # Application definition
 
 INSTALLED_APPS = [
+    'apps.authentication', # ADDED AUTHENTICATION AS INSTALLED APP
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
