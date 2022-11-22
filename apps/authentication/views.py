@@ -8,6 +8,9 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
 from .forms import LoginForm, SignUpForm
 
+# Import Users Model
+from .models import Users
+
 
 def login_view(request):
     form = LoginForm(request.POST or None)
@@ -39,12 +42,16 @@ def register_user(request):
         form = SignUpForm(request.POST)
         if form.is_valid():
             form.save()
-            username = form.cleaned_data.get("username")
+            # Changed to username1 to avoid clashing and having to migrate again
+            username1 = form.cleaned_data.get("username")
             raw_password = form.cleaned_data.get("password1")
-            user = authenticate(username=username, password=raw_password)
+            user = authenticate(username=username1, password=raw_password)
 
             msg = 'User created successfully.'
             success = True
+            
+            # Adding user to users database
+            usersInstance = Users.objects.create(username=username1, mood=5)
 
             # return redirect("/login/")
 
