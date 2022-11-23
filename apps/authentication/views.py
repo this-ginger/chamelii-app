@@ -10,6 +10,9 @@ from .forms import LoginForm, SignUpForm
 
 # Import Users Model
 from .models import Users
+# Import templates
+from django.template import loader
+
 
 
 def login_view(request):
@@ -26,6 +29,8 @@ def login_view(request):
             if user is not None:
                 login(request, user)
 
+                request.session["username"] = username # Session Variable that stores current logged on users username
+
                 # THIS IS HARD CODED AND SHOULD NOT BE IMPLEMENTED LIVE
                 # Checks if user is admin account and either redirects them to dashboard or to profile page
                 if username == "RoryCameron":
@@ -34,6 +39,7 @@ def login_view(request):
                 else:
                     print("THIS IS NOT AN ADMIN")
                     return redirect("/profile.html")
+                    
             else:
                 msg = 'Invalid credentials'
         else:
@@ -69,3 +75,4 @@ def register_user(request):
         form = SignUpForm()
 
     return render(request, "accounts/register.html", {"form": form, "msg": msg, "success": success})
+
