@@ -25,7 +25,15 @@ def login_view(request):
             user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
-                return redirect("/")
+
+                # THIS IS HARD CODED AND SHOULD NOT BE IMPLEMENTED LIVE
+                # Checks if user is admin account and either redirects them to dashboard or to profile page
+                if username == "RoryCameron":
+                    print("THIS IS AN ADMIN")
+                    return redirect("/")
+                else:
+                    print("THIS IS NOT AN ADMIN")
+                    return redirect("/profile.html")
             else:
                 msg = 'Invalid credentials'
         else:
@@ -42,7 +50,7 @@ def register_user(request):
         form = SignUpForm(request.POST)
         if form.is_valid():
             form.save()
-            # Changed to username1 to avoid clashing and having to migrate again
+            # Changed to username1 to avoid possible clashing and having to migrate again
             username1 = form.cleaned_data.get("username")
             raw_password = form.cleaned_data.get("password1")
             user = authenticate(username=username1, password=raw_password)
