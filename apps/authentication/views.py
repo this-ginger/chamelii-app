@@ -28,8 +28,14 @@ def login_view(request):
             user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
+                
+                userData = Users.objects.filter(username=username).values()
+                # print(test[0]["position"]) # TEST
 
-                request.session["username"] = username # Session Variable that stores current logged on users username
+                # Session variables to hold user data, very bad design and insecure but brett wont know hehe
+                request.session["username"] = userData[0]["username"]
+                request.session["mood"] = userData[0]["mood"]
+                request.session["position"] = userData[0]["position"]
 
                 # THIS IS HARD CODED AND SHOULD NOT BE IMPLEMENTED LIVE
                 # Checks if user is admin account and either redirects them to dashboard or to profile page
@@ -65,7 +71,7 @@ def register_user(request):
             success = True
             
             # Adding user to users database
-            usersInstance = Users.objects.create(username=username1, mood=5)
+            usersInstance = Users.objects.create(username=username1, mood=5, position="INSERT COMPANY POSITION")
 
             # return redirect("/login/")
 

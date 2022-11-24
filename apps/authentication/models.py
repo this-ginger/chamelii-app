@@ -10,4 +10,5 @@ from django.db import models
 # Test to Create Users With Mood Rating
 class Users(models.Model):
     username = models.CharField(max_length=30)
-    mood = models.IntegerField()
+    mood = models.IntegerField(null=True)
+    position = models.CharField(max_length=250, null=True)
