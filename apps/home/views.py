@@ -12,7 +12,6 @@ from django.contrib.auth.models import User
 from django.shortcuts import render
 import math
 
-=======
 @login_required(login_url="/login/")
 def status(request):
     t = User.objects.all()
