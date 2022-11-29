@@ -31,25 +31,25 @@ function chatbotResponse() {
     botMessage = 'My name is ' + botName;
   }
 
-  if (lastUserMessage === 'I am unhappy' || lastUserMessage =='I am depressed'  || lastUserMessage =='I am Distressed' || lastUserMessage =='I am Sad' || lastUserMessage =='I am Sad' || lastUserMessage =='I am Miserable'  || lastUserMessage =='I am Troubled' || lastUserMessage =='I am Low' || lastUserMessage =='I am Down'  || lastUserMessage =='I am Anxious' )
+  if (lastUserMessage === 'I am unhappy' || lastUserMessage =='I am depressed'  || lastUserMessage =='I am distressed' || lastUserMessage =='I am sad' || lastUserMessage =='I am sad' || lastUserMessage =='I am miserable'  || lastUserMessage =='I am troubled' || lastUserMessage =='I am low' || lastUserMessage =='I am down'  || lastUserMessage =='I am anxious' )
   {
     const Unhappy = ['Try reading a book' , 'Im sorry to hear this. Please speak to your assigned mental health support worker and remember your mental health is a priority above all. ' , ' Im sorry to hear this, please speak to your team leader or mental health support worker for support. No one should feel distressed at work. ', ' Listen to upbeat music ' , '  Spend time with animals ' , '  Set new goals, create changes ' , '  Do something you are always wanted to do  ' , '  Write in a journal  ' , ' Im sorry to hear this. Please report this to your team leader for possible mediation and further steps.  ' , ' Remember that its normal to be nervous for this type of thing. Take deep breaths and try to come across as confident as you can. Having a practise run is always a good idea!  '  ]
     botMessage = Unhappy[Math.floor(Math.random()*(Unhappy.length))];;
   }
 
-  if (lastUserMessage === 'I am irritated' || lastUserMessage =='I am Frustrated' || lastUserMessage =='I am Mad' || lastUserMessage =='I am Stressed'|| lastUserMessage =='I am Worried' || lastUserMessage =='I am Depressed' )
+  if (lastUserMessage === 'I am irritated' || lastUserMessage =='I am frustrated' || lastUserMessage =='I am mad' || lastUserMessage =='I am stressed'|| lastUserMessage =='I am worried' || lastUserMessage =='I am depressed' )
   {
-    const Upset = [' Try to avoid confrontation with that person ' , 'Meditate  ' , 'Take a step back from the situation, try to keep calm' , 'Make a list of things that make you happy ' , 'Take a small break, this can help you refocus on your current task.' , 'Take a step back, a deep breath, and go through your current objectives and priorities.' ]
+    const Upset = ['Try to avoid confrontation with that person ' , 'Meditate  ' , 'Take a step back from the situation, try to keep calm' , 'Make a list of things that make you happy ' , 'Take a small break, this can help you refocus on your current task.' , 'Take a step back, a deep breath, and go through your current objectives and priorities.' ]
     botMessage = Upset[Math.floor(Math.random()*(Upset.length))];;
   }
  
-  if (lastUserMessage === 'I am content' || lastUserMessage =='I am Blessed' || lastUserMessage =='I am Cheery' || lastUserMessage =='I am Chuffed'|| lastUserMessage =='I am Good' || lastUserMessage =='I am Happy')
+  if (lastUserMessage === 'I am content' || lastUserMessage =='I am blessed' || lastUserMessage =='I am cheery' || lastUserMessage =='I am chuffed'|| lastUserMessage =='I am good' || lastUserMessage =='I am happy')
   {
     const Happy = ['Glad to hear it! ' , 'It might be a nice idea to take a small walk on your break. Vitamin D from the sun can boost mood and provide other health benefits!' , 'Great. I’m glad to hear this!' , 'Great. I’m glad to hear this!' , 'thats good, Treat yourself ' ]
     botMessage = Happy[Math.floor(Math.random()*(Happy.length))];;
   }
 
-  if (lastUserMessage === 'I am fortunate' || lastUserMessage =='I am Proud' || lastUserMessage =='I am Accomplished' || lastUserMessage =='I am good' )
+  if (lastUserMessage === 'I am fortunate' || lastUserMessage =='I am proud' || lastUserMessage =='I am accomplished' || lastUserMessage =='I am good' )
   {
     const Good = ['Forming strong relationships with your colleagues can help your mood and performance at work ' , 'Share your positivity   ' , 'Well done! Celebrate your achievement!' ]
     botMessage = Good[Math.floor(Math.random()*(Good.length))];;
