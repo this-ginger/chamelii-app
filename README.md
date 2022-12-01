@@ -18,26 +18,7 @@ The dev branch is currently the most complete in terms of functionality and UI e
 
 [Django](https://appseed.us/admin-dashboards/django/) Dashboard Boilerplate 
 
-Reference codebase used by AppSeed in all [Django Dashboards](https://appseed.us/admin-dashboards/django/) starters.
-
 <br />
-
-> 🚀 Built with [App Generator](https://appseed.us/generator/), Timestamp: `2022-06-06 13:56`
-
-- `Up-to-date dependencies`
-- Database: `sqlite`
-- UI-Ready app, Django Native ORM
-- `Session-Based authentication`, Forms validation
-- 👉 [Complete documentation](https://docs.appseed.us/boilerplate-code/django-dashboard) - `Learn how to use and update the product`
-  - ✅ [Set up the environment](https://docs.appseed.us/boilerplate-code/django-dashboard#environment)
-  - ✅ [Manage App users](https://docs.appseed.us/boilerplate-code/django-dashboard#manage-app-users)
-  - ✅ [Application Bootstrap Flow](https://docs.appseed.us/boilerplate-code/django-dashboard#application-bootstrap-flow)
-  - ✅ [App Routing](https://docs.appseed.us/boilerplate-code/django-dashboard#project-routing)
-  - ✅ [UI Assets and Templates](https://docs.appseed.us/boilerplate-code/django-dashboard#ui-assets-and-templates)
-  - ✅ [Set up the MySql Database](https://docs.appseed.us/boilerplate-code/django-dashboard#set-up-the-mysql-database)
-  - ✅ [Adding a new app](https://docs.appseed.us/boilerplate-code/django-dashboard#adding-a-new-app)
-  - ✅ [Static Assets for production](https://docs.appseed.us/boilerplate-code/django-dashboard#static-assets-for-production)  
-  
 
 ### 👉 Set Up for `Unix`, `MacOS` 
 
