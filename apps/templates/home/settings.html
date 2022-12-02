@@ -1,0 +1,100 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %} Settings {% endblock title %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="container-fluid py-4">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card mb-4">
+                <div class="card-header pb-0">
+                    <h6>Settings
+                    </h6>
+                </div>
+                <div class="card-body px-0 pt-0 pb-2">
+                    <div class="table-responsive p-0">
+                        <table class="table align-items-center mb-0">
+                            <div class="container-fluid py-4">
+                                <h6 class="text-uppercase text-body text-xs font-weight-bolder">Account</h6>
+                                <ul class="list-group">
+                                    <li class="list-group-item border-0 px-0">
+                                        <div class="form-check form-switch ps-0">
+                                            <input class="form-check-input ms-auto" type="checkbox"
+                                                id="flexSwitchCheckDefault" checked>
+                                            <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0"
+                                                for="flexSwitchCheckDefault">Email me when an issue is flagged by
+                                                HR</label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item border-0 px-0">
+                                        <div class="form-check form-switch ps-0">
+                                            <input class="form-check-input ms-auto" type="checkbox"
+                                                id="flexSwitchCheckDefault1">
+                                            <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0"
+                                                for="flexSwitchCheckDefault1">Email me when someone answers on my
+                                                post</label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item border-0 px-0">
+                                        <div class="form-check form-switch ps-0">
+                                            <input class="form-check-input ms-auto" type="checkbox"
+                                                id="flexSwitchCheckDefault2" checked>
+                                            <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0"
+                                                for="flexSwitchCheckDefault2">Email me when someone messages
+                                                me</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <h6 class="text-uppercase text-body text-xs font-weight-bolder mt-4">Application
+                                </h6>
+                                <ul class="list-group">
+                                    <li class="list-group-item border-0 px-0">
+                                        <div class="form-check form-switch ps-0">
+                                            <input class="form-check-input ms-auto" type="checkbox"
+                                                id="flexSwitchCheckDefault3">
+                                            <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0"
+                                                for="flexSwitchCheckDefault3">New launches and projects</label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item border-0 px-0">
+                                        <div class="form-check form-switch ps-0">
+                                            <input class="form-check-input ms-auto" type="checkbox"
+                                                id="flexSwitchCheckDefault4" checked>
+                                            <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0"
+                                                for="flexSwitchCheckDefault4">Monthly product updates</label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item border-0 px-0 pb-0">
+                                        <div class="form-check form-switch ps-0">
+                                            <input class="form-check-input ms-auto" type="checkbox"
+                                                id="flexSwitchCheckDefault5">
+                                            <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0"
+                                                for="flexSwitchCheckDefault5">Subscribe to newsletter</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock content %}
+
+<!-- Specific JS goes HERE -->
+{% block javascripts %}
+
+<script src="{{ ASSETS_ROOT }}/js/plugins/perfect-scrollbar.min.js"></script>
+<script src="{{ ASSETS_ROOT }}/js/plugins/smooth-scrollbar.min.js"></script>
+
+{% endblock javascripts %}
