@@ -1,7 +1,18 @@
 const currentYear = 2023;
 const weekDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const months = [
-	'January'
+	'January',
+	'February',
+	'March',
+	'April',
+	'May',
+	'June',
+	'July',
+	'August',
+	'September',
+	'Octomber',
+	'November',
+	'December'
 ];
 const colors = ['#2d6b5f', '#72e3a6', '#dff4c7', '#edbf98', '#ea3d36'];
 const defaultColor = '#888';
@@ -136,16 +147,3 @@ function addDays(date, days) {
 	result.setDate(result.getDate() + days);
 	return result;
 }
-
-// SOCIAL PANEL JS
-const floating_btn = document.querySelector('.floating-btn');
-const close_btn = document.querySelector('.close-btn');
-const social_panel_container = document.querySelector('.social-panel-container');
-
-floating_btn.addEventListener('click', () => {
-	social_panel_container.classList.toggle('visible')
-});
-
-close_btn.addEventListener('click', () => {
-	social_panel_container.classList.remove('visible')
-});
