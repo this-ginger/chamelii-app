@@ -3,7 +3,9 @@
 {% block title %} Profile {% endblock title %}
 
 <!-- Specific CSS goes HERE -->
-{% block stylesheets %}{% endblock stylesheets %}
+{% block stylesheets %}
+<link href="{{ ASSETS_ROOT }}/css/chamelii.scss" rel="stylesheet" />
+{% endblock stylesheets %}
 
 {% block content %}
 
@@ -29,7 +31,7 @@
         <div class="nav-wrapper position-relative end-0">
           <ul class="nav nav-pills nav-fill p-1 bg-transparent" role="tablist">
             <li class="nav-item">
-              <a class="nav-link mb-0 px-0 py-1 {% if 'games' in segment %} active {% endif %}" href="/games.html">
+              <a class="nav-link mb-0 px-0 py-1 {% if 'calendar' in segment %} active {% endif %}" href="/calendar.html">
                 <svg class="text-dark" width="16px" height="16px" viewBox="0 0 42 42" version="1.1"
                   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -50,7 +52,7 @@
                     </g>
                   </g>
                 </svg>
-                <span class="ms-1">Games</span>
+                <span class="ms-1">Calendar</span>
               </a>
             </li>
             <li class="nav-item">
@@ -116,11 +118,11 @@
     <div class="col-12 col-xl-4">
       <div class="card h-100">
         <div class="card-header pb-0 p-3">
-          <h6 class="mb-0">Your Status</h6>
+          <h6 class="mb-0">Health</h6>
         </div>
         <div class="card-body p-3">
-          <div>
-            <img src="{{ ASSETS_ROOT }}/img/cham-red-solo.png" alt="chamelii" class="w-100">
+          <div class="pb-2">
+            <img class="logo w-100" src="{{ ASSETS_ROOT }}/img/logos/chamred.svg" alt="chamelii">
           </div>
           <h5 class="text-center">Chamelii is here to help.</h5>
           <h5 class="text-center text-sm">It looks like things aren't going so great, would you like to message one of our mental health team?</h5>
@@ -130,10 +132,15 @@
     <div class="col-12 col-xl-4">
       <div class="card h-100">
         <div class="card-header pb-0 p-3">
-          <h6 class="mb-0">Health Team</h6>
+          <h6 class="mb-0">Workplace Counsellers</h6>
         </div>
         <div class="card-body p-3">
           <ul class="list-group">
+            <li class="list-group-item border-0 d-flex align-items-center px-0 mb-2">
+              <div class="d-flex text-center flex-column justify-content-center">
+                <h6 class="mb-0 text-sm">Chamelii has identified that you're struggling to sleep, and that you have recently had a bereavement in the family.<br><br> Chamelii has selected a few people you could talk to if you feel like you need to open up.</h6>
+              </div>
+            </li>
             <li class="list-group-item border-0 d-flex align-items-center px-0 mb-2">
               <div class="avatar me-3">
                 <img src="{{ ASSETS_ROOT }}/img/kal-visuals-square.jpg" alt="kal" class="border-radius-lg shadow">
@@ -170,17 +177,7 @@
               </div>
               <div class="d-flex align-items-start flex-column justify-content-center">
                 <h6 class="mb-0 text-sm">Drew Christie</h6>
-                <h8 class="mb-0 text-xs">Workplace Relationships Psychologist</h8>
-              </div>
-              <a class="btn btn-link pe-3 ps-0 mb-0 ms-auto" href="javascript:;">Message</a>
-            </li>
-            <li class="list-group-item border-0 d-flex align-items-center px-0">
-              <div class="avatar me-3">
-                <img src="{{ ASSETS_ROOT }}/img/team-3.jpg" alt="kal" class="border-radius-lg shadow">
-              </div>
-              <div class="d-flex align-items-start flex-column justify-content-center">
-                <h6 class="mb-0 text-sm">Mike Robinson</h6>
-                <h8 class="mb-0 text-xs">Support Staff</h8>
+                <h8 class="mb-0 text-xs">Bereavement Counseller</h8>
               </div>
               <a class="btn btn-link pe-3 ps-0 mb-0 ms-auto" href="javascript:;">Message</a>
             </li>
@@ -190,7 +187,8 @@
     </div>
     <div class="col-12 col-xl-4">
       <div class="card h-100">
-        <div class="card-body p-3">
+        <div class="card-body container p-3">
+          {% include "includes/moodCalendar.html" %}
         </div>
       </div>
     </div>
