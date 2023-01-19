@@ -5,16 +5,14 @@
 }
 
 :root {
-	--mood-color-1: #2d6b5f;
-	--mood-color-2: #72e3a6;
-	--mood-color-3: #dff4c7;
-	--mood-color-4: #edbf98;
-	--mood-color-5: #ea3d36;
+	--mood-color-1: #6c0;
+	--mood-color-2: #cc0000;
 }
 
 body {
 	font-family: 'Muli';
 	margin: 40px 0;
+    color:#000;
 }
 
 h2 {

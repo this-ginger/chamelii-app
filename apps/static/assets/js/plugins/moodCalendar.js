@@ -14,7 +14,7 @@ const months = [
 	'November',
 	'December'
 ];
-const colors = ['#2d6b5f', '#72e3a6', '#dff4c7', '#edbf98', '#ea3d36'];
+const colors = ['#6c0','#cc0000'];
 const defaultColor = '#888';
 let activeColor = '';
 
