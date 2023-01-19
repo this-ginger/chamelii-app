@@ -28,28 +28,28 @@ function chatbotResponse() {
   }
 
   if (lastUserMessage === 'name' || "what is your name?") {
-    botMessage = 'My name is ' + botName;
+    botMessage = 'Hey there!';
   }
 
-  if (lastUserMessage === 'I am unhappy' || lastUserMessage =='I am depressed'  || lastUserMessage =='I am Distressed' || lastUserMessage =='I am Sad' || lastUserMessage =='I am Sad' || lastUserMessage =='I am Miserable'  || lastUserMessage =='I am Troubled' || lastUserMessage =='I am Low' || lastUserMessage =='I am Down'  || lastUserMessage =='I am Anxious' )
+  if (lastUserMessage === 'I\'m unhappy' || lastUserMessage =='I\'m depressed'  || lastUserMessage =='I\'m distressed' || lastUserMessage =='I\'m sad' || lastUserMessage =='I\'m sad' || lastUserMessage =='I\'m miserable'  || lastUserMessage =='I\'m troubled' || lastUserMessage =='I\'m low' || lastUserMessage =='I\'m down'  || lastUserMessage =='I\'m anxious' )
   {
     const Unhappy = ['Try reading a book' , 'Im sorry to hear this. Please speak to your assigned mental health support worker and remember your mental health is a priority above all. ' , ' Im sorry to hear this, please speak to your team leader or mental health support worker for support. No one should feel distressed at work. ', ' Listen to upbeat music ' , '  Spend time with animals ' , '  Set new goals, create changes ' , '  Do something you are always wanted to do  ' , '  Write in a journal  ' , ' Im sorry to hear this. Please report this to your team leader for possible mediation and further steps.  ' , ' Remember that its normal to be nervous for this type of thing. Take deep breaths and try to come across as confident as you can. Having a practise run is always a good idea!  '  ]
     botMessage = Unhappy[Math.floor(Math.random()*(Unhappy.length))];;
   }
 
-  if (lastUserMessage === 'I am irritated' || lastUserMessage =='I am Frustrated' || lastUserMessage =='I am Mad' || lastUserMessage =='I am Stressed'|| lastUserMessage =='I am Worried' || lastUserMessage =='I am Depressed' )
+  if (lastUserMessage === 'I\'m irritated' || lastUserMessage =='I\'m frustrated' || lastUserMessage =='I\'m worried' || lastUserMessage =='I\'m stressed'|| lastUserMessage =='I\'m worried about my workload' || lastUserMessage =='I\'m depressed' || lastUserMessage =='I\'ve been feeling down lately' )
   {
-    const Upset = [' Try to avoid confrontation with that person ' , 'Meditate  ' , 'Take a step back from the situation, try to keep calm' , 'Make a list of things that make you happy ' , 'Take a small break, this can help you refocus on your current task.' , 'Take a step back, a deep breath, and go through your current objectives and priorities.' ]
+    const Upset = ['Try daily meditation, it might help you de-stress a bit!' , 'Take a step back from the situation, try to keep calm and break it down into smaller steps.', 'Take a short break, go for a walk or a glass of water, this might help you refocus!' , 'Take a step back, a deep breath, and go through your current objectives and priorities.' ]
     botMessage = Upset[Math.floor(Math.random()*(Upset.length))];;
   }
  
-  if (lastUserMessage === 'I am content' || lastUserMessage =='I am Blessed' || lastUserMessage =='I am Cheery' || lastUserMessage =='I am Chuffed'|| lastUserMessage =='I am Good' || lastUserMessage =='I am Happy')
+  if (lastUserMessage === 'I\'m content' || lastUserMessage =='I\'m blessed' || lastUserMessage =='I\'m cheery' || lastUserMessage =='I\'m chuffed'|| lastUserMessage =='I\'m feeling good today' || lastUserMessage =='I\'m happy')
   {
     const Happy = ['Glad to hear it! ' , 'It might be a nice idea to take a small walk on your break. Vitamin D from the sun can boost mood and provide other health benefits!' , 'Great. I’m glad to hear this!' , 'Great. I’m glad to hear this!' , 'thats good, Treat yourself ' ]
     botMessage = Happy[Math.floor(Math.random()*(Happy.length))];;
   }
 
-  if (lastUserMessage === 'I am fortunate' || lastUserMessage =='I am Proud' || lastUserMessage =='I am Accomplished' || lastUserMessage =='I am good' )
+  if (lastUserMessage === 'I\'m fortunate' || lastUserMessage =='I\'m proud' || lastUserMessage =='I\'m feeling accomplished' || lastUserMessage =='I\'m good' )
   {
     const Good = ['Forming strong relationships with your colleagues can help your mood and performance at work ' , 'Share your positivity   ' , 'Well done! Celebrate your achievement!' ]
     botMessage = Good[Math.floor(Math.random()*(Good.length))];;
@@ -114,6 +114,7 @@ function Speech(say) {
 
 //runs the keypress() function when a key is pressed
 document.onkeypress = keyPress;
+document.getElementById("send").addEventListener("click", newEntry);
 //if the key pressed is 'enter' runs the function newEntry()
 function keyPress(e) {
   var x = e || window.event;
