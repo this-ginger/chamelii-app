@@ -6,7 +6,7 @@
 
 :root {
 	--mood-color-1: #6c0;
-	--mood-color-2: #cc0000;
+	--mood-color-2: #f00;
 }
 
 body {
@@ -183,6 +183,8 @@ p {
 
 .randomize {
 	background-color: var(--mood-color-2);
+    border-radius: 50px;
+    border: none;
 }
 
 .clear {

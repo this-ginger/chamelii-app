@@ -23,6 +23,11 @@
       var fixedplugin = document.querySelector('.fixed-plugin');
       var ps3 = new PerfectScrollbar(fixedplugin);
     };
+
+    if (document.getElementsByClassName('messages')[0]) {
+      var messages = document.querySelector('.messages');
+      var ps4 = new PerfectScrollbar(messages);
+    };
   };
 })();
 
@@ -76,6 +81,55 @@ if (document.querySelector('.fixed-plugin')) {
   document.querySelector('body').onclick = function(e) {
     if (e.target != fixedPluginButton && e.target != fixedPluginButtonNav && e.target.closest('.fixed-plugin .card') != fixedPluginCard) {
       fixedPlugin.classList.remove('show');
+    }
+  }
+
+  if (navbar) {
+    if (navbar.getAttribute('navbar-scroll') == 'true') {
+      buttonNavbarFixed.setAttribute("checked", "true");
+    }
+  }
+
+}
+
+if (document.querySelector('.messages')) {
+  var messages = document.querySelector('.messages');
+  var messagesButton = document.querySelector('.messages-button');
+  var messagesButtonNav = document.querySelector('.messages-button-nav');
+  var messagesCard = document.querySelector('.messages .card');
+  var messagesCloseButton = document.querySelectorAll('.messages-close-button');
+  var navbar = document.getElementById('navbarBlur');
+  var buttonNavbarFixed = document.getElementById('navbarFixed');
+
+  if (messagesButton) {
+    messagesButton.onclick = function() {
+      if (!messages.classList.contains('show')) {
+        messages.classList.add('show');
+      } else {
+        messages.classList.remove('show');
+      }
+    }
+  }
+
+  if (messagesButtonNav) {
+    messagesButtonNav.onclick = function() {
+      if (!messages.classList.contains('show')) {
+        messages.classList.add('show');
+      } else {
+        messages.classList.remove('show');
+      }
+    }
+  }
+
+  messagesCloseButton.forEach(function(el) {
+    el.onclick = function() {
+      messages.classList.remove('show');
+    }
+  })
+
+  document.querySelector('body').onclick = function(e) {
+    if (e.target != messagesButton && e.target != messagesButtonNav && e.target.closest('.messages .card') != messagesCard) {
+      messages.classList.remove('show');
     }
   }
 

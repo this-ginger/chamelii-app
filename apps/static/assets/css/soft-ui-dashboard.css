@@ -4351,12 +4351,12 @@ fieldset:disabled .btn {
 
 .btn-link {
   font-weight: 400;
-  color: #cb0c9f;
+  color: #f00;
   text-decoration: none;
 }
 
 .btn-link:hover {
-  color: #830866;
+  color: #ff0065;
   text-decoration: none;
 }
 
@@ -21143,6 +21143,67 @@ fieldset:disabled .btn {
 }
 
 .fixed-plugin.show .card {
+  right: 0;
+}
+
+.messages .messages-button {
+  background: #fff;
+  border-radius: 50%;
+  bottom: 90px;
+  right: 30px;
+  font-size: 1.25rem;
+  z-index: 990;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+.messages .messages-button i {
+  pointer-events: none;
+}
+
+.messages .card {
+  position: fixed !important;
+  right: -360px;
+  top: 0;
+  height: 100%;
+  left: auto !important;
+  transform: unset !important;
+  width: 360px;
+  border-radius: 0;
+  padding: 0 10px;
+  transition: .2s ease;
+  z-index: 1020;
+}
+
+.messages .badge {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 23px;
+  margin-right: 5px;
+  position: relative;
+  width: 23px;
+  transition: all 0.2s ease-in-out;
+}
+
+.messages .badge:hover,
+.messages .badge.active {
+  border-color: #344767;
+}
+
+.messages .btn.bg-gradient-primary:not(:disabled):not(.disabled) {
+  border: 1px solid transparent;
+}
+
+.messages .btn.bg-gradient-primary:not(:disabled):not(.disabled):not(.active) {
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #cb0c9f;
+  color: #cb0c9f;
+}
+
+.messages.show .card {
   right: 0;
 }
 

@@ -31,10 +31,10 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
   <!-- Nucleo Icons -->
   <link href="{{ ASSETS_ROOT }}/css/nucleo-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link href="{{ ASSETS_ROOT }}/css/nucleo-svg.css" rel="stylesheet" />
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-  <link href="{{ ASSETS_ROOT }}/css/nucleo-svg.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link id="pagestyle" href="{{ ASSETS_ROOT }}/css/soft-ui-dashboard.css?v=1.0.5" rel="stylesheet" />
 
@@ -56,6 +56,7 @@
 
   <!-- APP Configurator -->
   {% include "includes/fixed-plugin.html" %}
+  {% include "includes/messages.html" %}
 
   <!-- Core JS Files -->
   {% include "includes/scripts.html" %}
@@ -78,7 +79,7 @@
   <!-- Github buttons -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="{{ ASSETS_ROOT }}/js/soft-ui-dashboard.min.js?v=1.0.5"></script>
+  <script src="{{ ASSETS_ROOT }}/js/soft-ui-dashboard.js?v=1.0.5"></script>
 
 </body>
 </html>
