@@ -182,7 +182,7 @@ p {
 }
 
 .randomize {
-	background-color: var(--mood-color-2);
+	background-color: #ADD8E6;
     border-radius: 50px;
     border: none;
 }

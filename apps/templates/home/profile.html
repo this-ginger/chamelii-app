@@ -11,8 +11,8 @@
 
 <div class="container-fluid">
 
-  <div class="page-header min-height-200 border-radius-xl mt-4"
-    style="background-image: url('{{ ASSETS_ROOT }}/img/curved-images/curved5-small.jpg'); background-position-y: 50%;">
+  <div id="header" class="page-header border-radius-xl mt-4">
+    {% include "includes/waves.html" %}
   </div>
 
   <div class="card card-body blur shadow-blur mx-4 mt-n6 overflow-hidden">
@@ -31,7 +31,8 @@
         <div class="nav-wrapper position-relative end-0">
           <ul class="nav nav-pills nav-fill p-1 bg-transparent" role="tablist">
             <li class="nav-item">
-              <a class="nav-link mb-0 px-0 py-1 {% if 'calendar' in segment %} active {% endif %}" href="/calendar.html">
+              <a class="nav-link mb-0 px-0 py-1 {% if 'calendar' in segment %} active {% endif %}"
+                href="/calendar.html">
                 <svg class="text-dark" width="16px" height="16px" viewBox="0 0 42 42" version="1.1"
                   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -56,7 +57,8 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mb-0 px-0 py-1 {% if 'messages-page' in segment %} active {% endif %}" href="/messages-page.html">
+              <a class="nav-link mb-0 px-0 py-1 {% if 'messages-page' in segment %} active {% endif %}"
+                href="/messages-page.html">
                 <svg class="text-dark" width="16px" height="16px" viewBox="0 0 40 44" version="1.1"
                   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <title>document</title>
@@ -79,7 +81,8 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mb-0 px-0 py-1 {% if 'settings' in segment %} active {% endif %}" href="/settings.html">
+              <a class="nav-link mb-0 px-0 py-1 {% if 'settings' in segment %} active {% endif %}"
+                href="/settings.html">
                 <svg class="text-dark" width="16px" height="16px" viewBox="0 0 40 40" version="1.1"
                   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <title>settings</title>
@@ -109,7 +112,6 @@
       </div>
     </div>
   </div>
-
 </div>
 
 <div class="container-fluid py-4">
