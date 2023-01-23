@@ -1,0 +1,120 @@
+{% extends 'layouts/base-message.html' %}
+
+{% block title %} Messages {% endblock title %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}
+<link href="{{ ASSETS_ROOT }}/css/messages-page.css" rel="stylesheet" />
+{% endblock stylesheets %}
+
+{% block content %}
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-lg-12">
+            <div class="card chat-app">
+                <div id="plist" class="people-list">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-search"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search...">
+                    </div>
+                    <ul class="list-unstyled chat-list mt-2 mb-0">
+                        <li class="clearfix active">
+                            <img src="{{ ASSETS_ROOT }}/img/kal-visuals-square.jpg" alt="avatar">
+                            <div class="about">
+                                <div class="name">Sophie Gray</div>
+                                <div class="status"> <i class="fa fa-circle online"></i> Online </div>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <img src="{{ ASSETS_ROOT }}/img/marie.jpg" alt="avatar">
+                            <div class="about">
+                                <div class="name">Nicola Mason</div>
+                                <div class="status"> <i class="fa fa-circle online"></i> Online </div>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <img src="{{ ASSETS_ROOT }}/img/ivana-square.jpg" alt="avatar">
+                            <div class="about">
+                                <div class="name">Alex Robertson</div>
+                                <div class="status"> <i class="fa fa-circle online"></i> Online </div>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <img src="{{ ASSETS_ROOT }}/img/team-4.jpg" alt="avatar">
+                            <div class="about">
+                                <div class="name">Drew Christie</div>
+                                <div class="status"> <i class="fa fa-circle online"></i> Online </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chat">
+                    <div class="chat-header clearfix">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="chat-about">
+                                    <h6 class="m-b-0">Sophie Gray -<img src="{{ ASSETS_ROOT }}/img/kal-visuals-square.jpg" alt="avatar" class="mx-2">
+                                    </h6>
+                                </div>
+                                <h7 class="mx-1">Mental Health Coordinator</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-history">
+                        <ul class="m-b-0">
+                            <li class="clearfix">
+                                <div class="message-data text-right">
+                                    <span class="message-data-time">10:10am</span>
+                                </div>
+                                <div class="message other-message float-left"> Hi Joe, how are you doing? </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="message-data float-right">
+                                    <span class="message-data-time">10:12am</span>
+                                </div>
+                                <div class="message my-message float-right">Hi Sophie, things haven't been great recently. Could I schedule a session with you soon?</div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="message-data">
+                                    <span class="message-data-time">10:15am</span>
+                                </div>
+                                <div class="message other-message float-left">Sorry to hear that. Of course! I'll check my calendar and book you in for an appointment as soon as possible.</div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="message-data">
+                                    <span class="message-data-time">10:27am</span>
+                                </div>
+                                <div class="message other-message float-left">Hi Joe, I've a free appointment tomorrow at 2:30pm. Does that suit?</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chat-message clearfix">
+                        <div class="input-group mb-0">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-send"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Enter your message...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include "includes/footer.html" %}
+
+{% endblock content %}
+
+<!-- Specific JS goes HERE -->
+{% block javascripts %}
+
+<script src="{{ ASSETS_ROOT }}/js/plugins/perfect-scrollbar.min.js"></script>
+<script src="{{ ASSETS_ROOT }}/js/plugins/smooth-scrollbar.min.js"></script>
+
+{% endblock javascripts %}
