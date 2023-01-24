@@ -15,10 +15,10 @@
     {% include "includes/waves.html" %}
   </div>
 
-  <div class="card card-body blur shadow-blur mx-4 mt-n6 overflow-hidden">
-    <div class="row gx-4">
-      <div class="col-auto my-auto">
-        <div class="h-100">
+  <div class="card card-body blur shadow-blur mx-4 mt-n6 overflow-hidden w-auto">
+    <div class="row gx-4 mb-2">
+      <div class="col-auto">
+        <div class="h-auto">
           <h5 class="mb-1">
             Joe Bloggs
           </h5>
@@ -123,7 +123,7 @@
         </div>
         <div class="card-body p-3">
           <div class="pb-2">
-            <img class="mx-auto logo w-100" src="{{ ASSETS_ROOT }}/img/logos/chamred.svg" alt="chamelii">
+            <img class="mx-auto logo w-100" src="{{ ASSETS_ROOT }}/img/chamblue.svg" alt="chamelii">
           </div>
           <h5 class="text-center">Chamelii is here to help.</h5>
           {% include "includes/counsellers.html" %}
@@ -134,6 +134,28 @@
       <div class="card" id="cal">
         <div class="card-body container p-3">
           {% include "includes/moodCalendar.html" %}
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-lg-12 mb-lg-0 mb-4">
+          <div class="card z-index-1">
+            <div class="card-body p-3">
+              <div class="row mt-1 mb-2">
+                <div class="col-lg-6">
+                  <h5> Mental Health Tracker </h5>
+                </div>
+                <div class="col-lg-6">
+                  <h5 class="font-weight-bold"><i class="fa fa-arrow-down text-danger"></i>29% This month</h5>
+                </div>
+              </div>
+              <div class="bg-dark border-radius-lg py-3 pe-1 mb-3">
+                <div class="chart">
+                  <canvas id="chart" class="chart-canvas" height="200"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -150,5 +172,8 @@
 
 <script src="{{ ASSETS_ROOT }}/js/plugins/perfect-scrollbar.min.js"></script>
 <script src="{{ ASSETS_ROOT }}/js/plugins/smooth-scrollbar.min.js"></script>
+<script src="{{ ASSETS_ROOT }}/js/plugins/chartjs.min.js"></script>
+<script src="{{ ASSETS_ROOT }}/js/plugins/chart.js"></script>
+
 
 {% endblock javascripts %}

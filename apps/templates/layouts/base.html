@@ -42,13 +42,14 @@
   {% block stylesheets %}{% endblock stylesheets %}
 
 </head>
+
 <body class="g-sidenav-show bg-gray-100">
 
-  {% include "includes/sidebar.html" %}   
+  {% include "includes/sidebar.html" %}
 
   <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
 
-    {% include "includes/navigation.html" %}     
+    {% include "includes/navigation.html" %}
 
     {% block content %}{% endblock content %}
 
@@ -61,9 +62,9 @@
   <!-- Core JS Files -->
   {% include "includes/scripts.html" %}
 
-  <!-- Specific JS goes HERE --> 
+  <!-- Specific JS goes HERE -->
   {% block javascripts %}{% endblock javascripts %}
-  
+
   <!-- FIX Sidenav-scrollbar -->
   <script>
     var win = navigator.platform.indexOf('Win') > -1;
@@ -82,4 +83,5 @@
   <script src="{{ ASSETS_ROOT }}/js/soft-ui-dashboard.js?v=1.0.5"></script>
 
 </body>
+
 </html>

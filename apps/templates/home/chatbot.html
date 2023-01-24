@@ -1,43 +1,25 @@
 {% extends 'layouts/base.html' %}
 
+<!-- base-message.html -->
+
 {% block title %} Chatbot {% endblock title %}
 
 <!-- Specific CSS goes HERE -->
-{% block stylesheets %}
-<link href="{{ ASSETS_ROOT }}/css/chatTest.css" rel="stylesheet" />
-{% endblock stylesheets %}
+{% block stylesheets %}{% endblock stylesheets %}
 
 {% block content %}
 
-    <div class="container-fluid">
-          <div class="card mb-4 p-3 pt-0">
-            <div class="card-body min-height-600">
-            <!--     <div id='chatborder'>
-                  <p id="chatlog7" class="chatlog">&nbsp;</p>
-                  <p id="chatlog6" class="chatlog">&nbsp;</p>
-                  <p id="chatlog5" class="chatlog">&nbsp;</p>
-                  <p id="chatlog4" class="chatlog">&nbsp;</p>
-                  <p id="chatlog3" class="chatlog">&nbsp;</p>
-                  <p id="chatlog2" class="chatlog">&nbsp;</p>
-                  <p id="chatlog1" class="chatlog">&nbsp;</p>
-                  <input class="w-auto" type="text" name="chat" id="chatbox" placeholder="Hi there! Type here to talk to me." onfocus="placeHolder()">
-              </div>
-            </div> -->
-            {% include "includes/chatTest.html" %}
-
-          </div>
-      
-    </div>
+{% include "includes/chatbotNew.html" %}
 
 {% include "includes/footer.html" %}
 
 {% endblock content %}
 
-<!-- Specific JS goes HERE --> 
+<!-- Specific JS goes HERE -->
 {% block javascripts %}
 
-  <script src="{{ ASSETS_ROOT }}/js/plugins/perfect-scrollbar.min.js"></script>
-  <script src="{{ ASSETS_ROOT }}/js/plugins/smooth-scrollbar.min.js"></script>
-  <script src="{{ ASSETS_ROOT }}/js/core/chatbot.js"></script>
+<script src="{{ ASSETS_ROOT }}/js/plugins/perfect-scrollbar.min.js"></script>
+<script src="{{ ASSETS_ROOT }}/js/plugins/smooth-scrollbar.min.js"></script>
+<script src="{{ ASSETS_ROOT }}/js/core/chatbot.js"></script>
 
 {% endblock javascripts %}

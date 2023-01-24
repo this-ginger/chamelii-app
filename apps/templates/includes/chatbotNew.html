@@ -1,0 +1,53 @@
+<link href="{{ ASSETS_ROOT }}/css/chatTest.css" rel="stylesheet" />
+
+<div class="chat">
+    <div id="header" class="page-header border-radius-xl mt-4 mx-3">
+        {% include "includes/waves.html" %}
+    </div>
+
+    <div class="card card-body blur shadow-blur mx-4 mt-n6 overflow-hidden w-auto">
+        <div class="row gx-4 mb-2">
+            <div class="col-auto">
+                <div class="h-auto">
+                    <h6 class="mb-0">Chamelii - Mental Health First Responder</h6>
+                </div>
+            </div>
+        </div>
+        <div class="chatborder">
+            <ul class="m-b-0">
+                <li class="clearfix">
+                    <div id="chatlog7" class="chat-box-body-receive clearfix">&nbsp;</div>
+                </li>
+                <li class="clearfix">
+                    <div id="chatlog6" class="chat-box-body-send clearfix">&nbsp;</div>
+                </li>
+                <li class="clearfix">
+                    <div id="chatlog5" class="chat-box-body-receive clearfix">&nbsp;</div>
+                </li>
+                <li class="clearfix">
+                    <div id="chatlog4" class="chat-box-body-send clearfix">&nbsp;</div>
+                </li>
+                <li class="clearfix">
+                    <div id="chatlog3" class="chat-box-body-receive clearfix">&nbsp;</div>
+                </li>
+                <li class="clearfix">
+                    <div id="chatlog2" class="chat-box-body-send clearfix">&nbsp;</div>
+                </li>
+                <li class="clearfix">
+                    <div id="chatlog1" class="chat-box-body-receive clearfix">&nbsp;</div>
+                </li>
+            </ul>
+        </div>
+        <div class="chat-message clearfix">
+            <div class="input-group mb-0">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i id="send" class="fa fa-send"></i></span>
+                </div>
+                <input class="form-control" type="text" name="chat" id="chatbox"
+                    placeholder="Hi there! Type here to talk to me." onfocus="placeHolder()">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{ ASSETS_ROOT }}/js/core/chatbot.js"></script>
