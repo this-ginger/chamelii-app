@@ -3,7 +3,7 @@ var messages = [], //array that hold the record of each string in chat
   botMessage = "", //var keeps track of what the chatbot is going to say
   botName = 'Chamelii', //name of the chatbot
   userName = 'Joe',
-  talking = false; //when false the speach function doesn't work
+  talking = true; //when false the speach function doesn't work
 //
 
 //edit this function to change what the chatbot says
