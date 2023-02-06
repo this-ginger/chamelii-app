@@ -20,7 +20,7 @@ function chatbotResponse() {
   }
 
   if (lastUserMessage === 'I don\'t really like seeing people anymore, I\'m worried about angry outbursts') {
-    botMessage === 'That\'s totally understandable and normal. I\'m here to listen in a safe, confidential environment and look for the right type of additional support for you. We can arrange some coaching to help you manage the angry outbursts and will arrange a mental health first aid practitioner to message you directly in your safe space.'
+    botMessage = 'That\'s totally understandable and normal. I\'m here to listen in a safe, confidential environment and look for the right type of additional support for you. We can arrange some coaching to help you manage the angry outbursts and will arrange a mental health first aid practitioner to message you directly in your safe space.'
   }
 
   if (lastUserMessage === 'name' || "what is your name?") {
@@ -33,7 +33,7 @@ function chatbotResponse() {
   }
 
   if (lastUserMessage === 'I\'m finding it hard to concentrate and want to sleep all day.') {
-    botMessage === 'Well the first step is to consult with a medical professional to determine a diagnosis, it may well be that you\'re experiencing some short-term stress conditions.  We can arrange a confidential appointment for you in your safe space? Or, there are 6 free confidential therapy sessions in your safe space to access. We can also arrange a coach on stress or anxiety to teach you some coping tools when you feel a little overwhelmed.'
+    botMessage = 'Well the first step is to consult with a medical professional to determine a diagnosis, it may well be that you\'re experiencing some short-term stress conditions.  We can arrange a confidential appointment for you in your safe space? Or, there are 6 free confidential therapy sessions in your safe space to access. We can also arrange a coach on stress or anxiety to teach you some coping tools when you feel a little overwhelmed.'
   }
 
   if (lastUserMessage === 'name' || "what is your name?") {
