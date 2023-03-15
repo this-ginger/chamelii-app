@@ -33,7 +33,7 @@ var oldEvent,
     myData = [{
         id: 1,
         start: '2023-03-03T13:00',
-        end: '2023-03-04T13:45',
+        end: '2023-03-03T13:45',
         title: 'Meeting with Alex',
         description: '',
         allDay: false,
