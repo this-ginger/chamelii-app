@@ -3,7 +3,7 @@
     "object" == typeof exports && "undefined" != typeof module ? t(exports) : "function" == typeof define && define.amd ? define(["exports"], t) : t(((e = "undefined" != typeof globalThis ? globalThis : e || self).mobiscroll = {}));
 })(this, function (e) {
     "use strict";
-    var t = { apiKey: "d9a85fa6", apiUrl: "https://trial.mobiscroll.com/" },
+    var t = { apiKey: "81293470", apiUrl: "https://trial.mobiscroll.com/" },
         n = function (e, t) {
             return (
                 (n =
