@@ -32,7 +32,7 @@ var oldEvent,
     },
     myData = [{
         id: 1,
-        start: '2023-03-04T13:00',
+        start: '2023-03-03T13:00',
         end: '2023-03-04T13:45',
         title: 'Meeting with Alex',
         description: '',
@@ -41,8 +41,8 @@ var oldEvent,
         color: '#009788'
     }, {
         id: 2,
-        start: '2023-03-09T10:00',
-        end: '2023-03-13T16:00',
+        start: '2023-03-20T10:00',
+        end: '2023-03-24T16:00',
         title: 'Onboarding week',
         description: '',
         allDay: false,
@@ -50,22 +50,31 @@ var oldEvent,
         color: '#ff9900'
     }, {
         id: 3,
-        start: '2023-03-18T18:00',
-        end: '2023-03-18T22:00',
-        title: 'Meeting with Brett',
+        start: '2023-03-09T10:00',
+        end: '2023-03-09T12:00',
+        title: 'Meeting with John',
         description: '',
         allDay: false,
         free: true,
         color: '#3f51b5'
     }, {
         id: 4,
-        start: '2023-03-20T10:30',
-        end: '2023-03-20T11:30',
+        start: '2023-03-13T10:30',
+        end: '2023-03-13T11:30',
         title: 'Client Meeting',
         description: '',
         allDay: false,
         free: true,
         color: '#f44437'
+    }, {
+        id: 5,
+        start: '2023-03-14T10:30',
+        end: '2023-03-14T11:30',
+        title: 'Meeting with Jill',
+        description: '',
+        allDay: false,
+        free: true,
+        color: '#009788'
     }];
 
 function createAddPopup(elm) {
